@@ -7,7 +7,6 @@ class Compiler {
     constructor() {
         this.inboxPath = path.resolve(__dirname,"contracts","Inbox.sol");
         this.inboxSource = fs.readFileSync(this.inboxPath, 'utf8');
-        console.log();
     }
 
     compileContract(contractName){
